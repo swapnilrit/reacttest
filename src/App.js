@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter  from './components/Counter';
+import {store} from "./store";
+import { Provider } from 'react-redux';
+import ListUsers from './components/ListUsers';
+import Child from './components/Child';
+import Parent from './components/Parent';
+import styles from "./css/style.module.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Provider store={store}>
+     <Counter></Counter>
+     <ListUsers></ListUsers>
+     </Provider> */}
+     <Parent hell={styles}></Parent>
     </div>
   );
 }

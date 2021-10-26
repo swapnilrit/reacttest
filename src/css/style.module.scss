@@ -1,0 +1,15 @@
+
+@import "display";
+
+@mixin mymix($color:red) {
+   color:$color;  
+}
+
+%myExt {
+ background-color: yellow;
+}
+
+.customColor{
+    @include mymix($color);
+    @extend %myExt;
+}
