@@ -13,7 +13,7 @@ function ListUsers(props) {
 
    useEffect(() => {    
         dispatch(fetchUserData());
-   }, [])
+   }, [dispatch])
 
     return (
         <div>

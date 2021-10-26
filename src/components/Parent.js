@@ -24,7 +24,7 @@ function Parent(props) {
   useEffect(() => {
      myRef.focus();
       
-  }, [])
+  }, [myRef])
 
  const clearTimer=()=>{
 
