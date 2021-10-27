@@ -34,7 +34,7 @@ function Parent(props) {
 
 
   return (<div>
-           <h1 className={props.hell.customColor}> {count}  from Mast Hai </h1>
+           <h1 className={props.hell.customColor}> {count}  from Docker Mast Hai </h1>
             <input type="text" ref={(ele)=>myRef=ele}/>
             <button onClick={()=>clearTimer()}>Stop Timer</button>
         </div>)
